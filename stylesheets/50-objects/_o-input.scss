@@ -1,0 +1,43 @@
+.o-input{
+  &--group {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-size: $primary-color;
+  }
+
+  &--label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0.5;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: $primary-color;
+    padding-left: 0rem
+  }
+
+  &--input {
+    width: 100%;
+    padding: .75rem .75rem;
+    border: none;
+    border-bottom: 2px solid $primary-color;
+    outline: none;
+    padding-left: 0rem;
+    font-size: 1rem;
+    &::-webkit-outer-spin-button, 
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &:focus + .o-input--label,
+    &:valid + .o-input--label {
+      font-size: 90%;
+      transform: translate3d(0, -100%, 0);
+      opacity: 1;
+    }
+  }
+}

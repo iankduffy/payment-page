@@ -1,0 +1,18 @@
+.c-btn {
+  display: block;
+  padding: 12px 10px; 
+  color: #eee;
+  cursor: pointer;
+  align-self: flex-end;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 400ms; 
+  background: $primary-color;
+  font-size: 0.9rem;
+  border-radius: 5px;
+
+  &:hover{
+    background: transparentize($primary-color, 0.2)
+  }
+}
